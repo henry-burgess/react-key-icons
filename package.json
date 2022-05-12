@@ -12,12 +12,14 @@
   ],
   "scripts": {
     "build": "webpack",
-    "clean": "rm -rf build",
+    "clean": "rm -rf build .parcel-cache",
+    "demo": "parcel demo/index.html --open chrome --port 8080 --dist-dir demo/build",
     "lint": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "^17.0.32",
     "@types/react": "^18.0.9",
+    "parcel": "^2.5.0",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
