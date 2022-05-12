@@ -1,6 +1,6 @@
 # react-key-icons
 
-> Small React component used to present keyboard keys or key combinations. 
+> Small React component used to present keyboard keys or key combinations.
 
 ## Installation
 
@@ -29,8 +29,6 @@ const Component = () => {
   );
 };
 ```
-
-
 
 ### Props
 
@@ -68,7 +66,6 @@ const Component = () => {
 <img src="public/Example_Height.png">
 
 ### Disabled
-
 
 ```TypeScript
 const Component = () => {
