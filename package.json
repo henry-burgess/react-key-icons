@@ -2,24 +2,28 @@
   "name": "react-key-icons",
   "version": "0.1.0",
   "main": "build/main.js",
-  "types": "types/index.d.ts",
+  "types": "build/index.d.ts",
   "repository": "https://github.com/henry-burgess/react-key-icons.git",
   "author": "Henry Burgess <henryjburg@gmail.com>",
   "license": "MIT",
   "files": [
-    "build",
-    "types/index.d.ts"
+    "build"
   ],
   "scripts": {
     "build": "webpack",
-    "clean": "rm -rf build",
+    "clean": "rm -rf build .parcel-cache demo/build",
+    "demo": "parcel demo/index.html --open chrome --port 8080 --dist-dir demo/build",
     "lint": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "^17.0.32",
     "@types/react": "^18.0.9",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "parcel": "^2.5.0",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.0",
     "tslib": "^2.4.0",
