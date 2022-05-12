@@ -16,13 +16,12 @@ const aliases: {[key: string]: string} = {
 
 declare type KeyProps = {
   value: string;
-  state?: "success" | "error" | "pressed";
-  size?: number;
+  height?: number;
   disabled?: boolean;
   showCursor?: boolean;
 };
 
-const SIZE = 64;
+const HEIGHT = 64;
 
 const Key: FC<KeyProps> = (props: KeyProps): ReactElement => {
   let presentedValue = props.value;
@@ -47,22 +46,9 @@ const Key: FC<KeyProps> = (props: KeyProps): ReactElement => {
     styleClasses.push("styled-key-disabled");
   }
 
-  // Set the correct style of the key
-  switch (props.state) {
-    case "success":
-      styleClasses.push("styled-key-success");
-      break;
-    case "error":
-      styleClasses.push("styled-key-error");
-      break;
-    case "pressed":
-      styleClasses.push("styled-key-pressed");
-      break;
-  }
-
-  // Set the size of the button if specified
+  // Set the height of the button if specified
   const customStyles = {
-    height: props.size === undefined ? SIZE : Math.max(SIZE, props.size),
+    height: props.height === undefined ? HEIGHT : Math.max(HEIGHT, props.height),
   }
 
   return (

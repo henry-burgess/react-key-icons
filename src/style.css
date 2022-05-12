@@ -22,30 +22,8 @@
   cursor: none;
 }
 
-/* 'Pressed' class */
-.styled-key-pressed {
-  background-color: #bbbbbb;
-  box-shadow: 1px 1px #d3d3d3;
-}
-
 /* 'Disabled' class */
 .styled-key-disabled {
   color: #b4b4b4;
   background-color: #f3f3f3;
-}
-
-/* 'Success' class */
-.styled-key-success {
-  color: #5a5a5a;
-  background-color: #71e466;
-  border: 2px solid #67d15e;
-  box-shadow: 3px 3px #62c759;
-}
-
-/* 'Error' class */
-.styled-key-error {
-  color: #5a5a5a;
-  background-color: #f60606;
-  border: 2px solid #b60f0f;
-  box-shadow: 3px 3px #be0000;
 }
