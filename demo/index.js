@@ -1,5 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
+
+// Key component
 import Key from "../src/index";
 
-render(<Key />, document.getElementById("content"));
+render(<Key value={"B"} />, document.getElementById("content"));
