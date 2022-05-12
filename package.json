@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "webpack",
-    "clean": "rm -rf build .parcel-cache",
+    "clean": "rm -rf build .parcel-cache demo/build",
     "demo": "parcel demo/index.html --open chrome --port 8080 --dist-dir demo/build",
     "lint": "prettier --write ."
   },
