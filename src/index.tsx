@@ -1,7 +1,7 @@
 import React, { FC, ReactElement } from "react";
 
 // Import styling
-import "./css/style.css";
+import "./style.css";
 
 // Setup a list of aliases
 const aliases: {[key: string]: string} = {
@@ -13,6 +13,14 @@ const aliases: {[key: string]: string} = {
   "OPTION": "Opt",
   "BACKSPACE": "Bksp",
 }
+
+declare type KeyProps = {
+  value: string;
+  state?: "success" | "error" | "pressed";
+  size?: number;
+  disabled?: boolean;
+  showCursor?: boolean;
+};
 
 const SIZE = 64;
 
