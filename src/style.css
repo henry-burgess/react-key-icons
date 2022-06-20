@@ -17,13 +17,24 @@
   padding-bottom: 100%;
 }
 
-/* Utility class */
-.no-cursor {
-  cursor: none;
+/* Selected 'styled-key-pressed' class */
+.styled-key-pressed {
+  background-color: #c2c2c2;
+  color: #575757;
+  width: auto;
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 2px solid #cbcbcb;
+  box-shadow: 1.5px 1.5px #b8b8b8;
 }
 
 /* 'Disabled' class */
 .styled-key-disabled {
   color: #b4b4b4;
   background-color: #f3f3f3;
+}
+
+/* Utility class */
+.no-cursor {
+  cursor: none;
 }

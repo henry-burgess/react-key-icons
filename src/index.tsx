@@ -18,6 +18,7 @@ declare type KeyProps = {
   value: string;
   height?: number;
   disabled?: boolean;
+  pressed?: boolean;
   showCursor?: boolean;
 };
 
@@ -43,7 +44,13 @@ const Key: FC<KeyProps> = (props: KeyProps): ReactElement => {
   }
 
   if (props.disabled !== undefined && props.disabled === true) {
+    // Disabled appearance
     styleClasses.push("styled-key-disabled");
+  }
+
+  if (props.disabled !== true && props.pressed === true) {
+    // Pressed appearance
+    styleClasses.push("styled-key-pressed");
   }
 
   // Set the height of the button if specified
