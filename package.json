@@ -1,6 +1,6 @@
 {
   "name": "react-key-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/main.js",
   "types": "build/index.d.ts",
   "repository": "https://github.com/henry-burgess/react-key-icons.git",
